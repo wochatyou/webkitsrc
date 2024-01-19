@@ -33,7 +33,7 @@
 
 namespace bmalloc {
 
-constexpr size_t bitsArrayLength(size_t numBits) { return (numBits + 31) / 32; }
+constexpr size_t bitsArrayLength(size_t numBits) { return (numBits + 31) / 32; } /// 按32位对齐
 
 class BitsWordView {
 public:

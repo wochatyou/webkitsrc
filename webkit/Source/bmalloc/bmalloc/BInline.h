@@ -27,7 +27,7 @@
 
 #include "BCompiler.h"
 
-#if BCOMPILER(GCC_COMPATIBLE)
+#if BCOMPILER(GCC_COMPATIBLE) /// 分为VC和GCC两种情况
 #define BINLINE __attribute__((always_inline)) inline
 #define BNO_INLINE __attribute__((noinline))
 #elif BCOMPILER(MSVC)

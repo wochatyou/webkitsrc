@@ -66,7 +66,7 @@ BINLINE void* tryMalloc(size_t size, HeapKind kind = HeapKind::Primary)
 }
 
 // Crashes on failure.
-BINLINE void* malloc(size_t size, HeapKind kind = HeapKind::Primary)
+BINLINE void* malloc(size_t size, HeapKind kind = HeapKind::Primary) /// 自己定义的内存分配函数
 {
 #if BUSE(LIBPAS)
     if (!isGigacage(kind))
