@@ -378,7 +378,7 @@ static struct gui_misc_table win32_misc_table = {
  * Entry point from windows
  **/
 int WINAPI
-WinMain(HINSTANCE hInstance, HINSTANCE hLastInstance, LPSTR lpcli, int ncmd)
+WinMain(HINSTANCE hInstance, HINSTANCE hLastInstance, LPSTR lpcli, int ncmd) /// 主函数
 {
 	int argc;
 	char **argv;

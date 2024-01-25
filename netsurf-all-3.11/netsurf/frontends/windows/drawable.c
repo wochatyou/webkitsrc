@@ -558,7 +558,7 @@ static LRESULT CALLBACK
 nsws_window_drawable_event_callback(HWND hwnd,
 				    UINT msg,
 				    WPARAM wparam,
-				    LPARAM lparam)
+				    LPARAM lparam) /// 内容窗口的消息处理函数
 {
 	struct gui_window *gw;
 
